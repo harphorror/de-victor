@@ -1,0 +1,150 @@
+{
+  "titulo": "U3 - Patrones y Operaciones Avanzadas con Listas",
+  "colegio": "Colegio Arriarán Barros",
+  "estudiante": "Víctor Valentín Moreira Segovia",
+  "curso": "3°MB",
+  "inicio": "2026-08-27T14:01:38.773Z",
+  "guardado": "2026-08-27T15:02:11.866Z",
+  "tiempoTranscurrido": "52 min 21 seg",
+  "ejercicios": [
+    {
+      "numero": 1,
+      "titulo": "Modelo: primeros y últimos nombres",
+      "estado": "ok",
+      "codigo": "# Escribe tu código aquí\nfrutas = [\"manzana\", \"plátano\", \"pera\", \"uva\", \"kiwi\"]\nprint(frutas[1:])",
+      "salida": "['plátano', 'pera', 'uva', 'kiwi']\n"
+    },
+    {
+      "numero": 2,
+      "titulo": "Práctica guiada: números del medio",
+      "estado": "ok",
+      "codigo": "# Escribe tu código aquí\nfrutas = [23, 7, 29, 290, 18, 237]\nprint(frutas)\nprint(frutas[::-1])\nprint(frutas[3:6])\n",
+      "salida": "[23, 7, 29, 290, 18, 237]\n[237, 18, 290, 29, 7, 23]\n[290, 18, 237]\n"
+    },
+    {
+      "numero": 3,
+      "titulo": "Independiente: playlist de canciones",
+      "estado": "ok",
+      "codigo": "# Escribe tu código aquí\nsongs = [\"Crisol\", \"Disfraz\", \"Halloween\", \"Detras de la tormenta\", \"Suicidio\", \"Depresión\", \"Se quien soy\"]\nprint(songs[:2])\nprint(songs[-2:])\nprint(songs[::-1])",
+      "salida": "['Crisol', 'Disfraz']\n['Depresión', 'Se quien soy']\n['Se quien soy', 'Depresión', 'Suicidio', 'Detras de la tormenta', 'Halloween', 'Disfraz', 'Crisol']\n"
+    },
+    {
+      "numero": 4,
+      "titulo": "Modelo: máximo a mano y con max()",
+      "estado": "ok",
+      "codigo": "# Escribe tu código aquí\n",
+      "salida": ""
+    },
+    {
+      "numero": 5,
+      "titulo": "Práctica guiada: mínimo a mano y con min()",
+      "estado": "ok",
+      "codigo": "# Escribe tu código aquí\nvalor = [12500, 43000, 34000, 40000, 10000, 18000]\n\nmenor = valor[0]\nfor v in valor:\n    if v < menor:\n      menor = v\nprint(\"minimo\", menor)\nprint(\"minimo:\", min(valor))",
+      "salida": "minimo 10000\nminimo: 10000\n"
+    },
+    {
+      "numero": 6,
+      "titulo": "Independiente: estadísticas de una lista",
+      "estado": "ok",
+      "codigo": "# Escribe tu código aquí\nt = [30.0, 35.7, 36.5, 37.9, 38.7, 39.0]\nprint(max(t))\nprint(min(t))\nprint(sum(t)/len(t))",
+      "salida": "39.0\n30.0\n36.3\n"
+    },
+    {
+      "numero": 7,
+      "titulo": "Modelo: encuesta de satisfacción",
+      "estado": null,
+      "codigo": "# Copia tu código del ejercicio anterior y agrega el conteo de aprobados\n ",
+      "salida": ""
+    },
+    {
+      "numero": 8,
+      "titulo": "Práctica guiada: inventario de tallas",
+      "estado": "ok",
+      "codigo": "tallas = [\"M\", \"S\", \"L\", \"XS\", \"XL\",\"M\", \"M\"]\nprint(tallas.count(\"M\"))\ntallas.insert(0, \"S\")\nprint(tallas)",
+      "salida": "3\n['S', 'M', 'S', 'L', 'XS', 'XL', 'M', 'M']\n"
+    },
+    {
+      "numero": 9,
+      "titulo": "Independiente: registro de calificaciones",
+      "estado": "ok",
+      "codigo": "# Escribe tu solución completa aquí\nqua = [\"aprobado\", \"aprobado\", \"reprobado\", \"aprobado\", \"reprobado\", \"reprobado\", \"reprobado\", \"reprobado\"]\nprint(qua.count(\"reprobado\"))\nprint(len(qua))\nqua.insert(3, \"aprobado\")\nprint(qua)\nprint(len(qua))",
+      "salida": "5\n8\n['aprobado', 'aprobado', 'reprobado', 'aprobado', 'aprobado', 'reprobado', 'reprobado', 'reprobado', 'reprobado']\n9\n"
+    },
+    {
+      "numero": 10,
+      "titulo": "Modelo: combinar equipos",
+      "estado": "ok",
+      "codigo": "#equipo_a = [\"Ana\", \"Beto\"]\n#equipo_b = [\"Caro\", \"Diego\"]\n#todos = equipo_a + equipo_b\n#print(\"Equipo A:\", equipo_a)\n#print(\"Equipo B:\", equipo_b)\n#print(\"Todos juntos:\", todos)\nlista1 = [23, 24]\nlista2 = [25, 26]\nambas = lista1 + lista2\nprint(ambas)",
+      "salida": "[23, 24, 25, 26]\n"
+    },
+    {
+      "numero": 11,
+      "titulo": "Práctica guiada: combinar turnos",
+      "estado": null,
+      "codigo": "turno1 = [\"lucas\", \"aivan\", \"maxi\"]\nturno2 = [\"bastian\", \"matias\", \"vale\"]\n",
+      "salida": ""
+    },
+    {
+      "numero": 12,
+      "titulo": "Independiente: unir listas de compras",
+      "estado": null,
+      "codigo": "# Escribe tu solución completa aquí\n",
+      "salida": ""
+    },
+    {
+      "numero": 13,
+      "titulo": "Modelo: el bug y la solución, lado a lado",
+      "estado": null,
+      "codigo": "",
+      "salida": ""
+    },
+    {
+      "numero": 14,
+      "titulo": "Práctica guiada: corrige el bug",
+      "estado": null,
+      "codigo": "",
+      "salida": ""
+    },
+    {
+      "numero": 15,
+      "titulo": "Independiente: copia segura de inventario",
+      "estado": null,
+      "codigo": "# Escribe tu solución completa aquí\n",
+      "salida": ""
+    },
+    {
+      "numero": 16,
+      "titulo": "Desafío: Sistema de Inventario con Reportes",
+      "estado": null,
+      "codigo": "",
+      "salida": ""
+    }
+  ],
+  "bitacora": [
+    {
+      "etiqueta": "Slicing",
+      "pregunta": "Explica con tus palabras qué hace lista[2:5]. ¿Por qué el elemento en la posición 5 NO se incluye?",
+      "respuesta": "Es un conjunto de números/texto que sirve para guardar datos y establecerlos en un orden."
+    },
+    {
+      "etiqueta": "La trampa de la copia",
+      "pregunta": "¿Por qué 'lista2 = lista1' no copia realmente la lista? ¿Qué problema puede causar esto si no te das cuenta?",
+      "respuesta": ""
+    },
+    {
+      "etiqueta": "Etapa más difícil",
+      "pregunta": "De todos los conceptos de hoy (slicing, max/min/sum, count/insert, combinar, copiar), ¿cuál te costó más? ¿Por qué?",
+      "respuesta": ""
+    },
+    {
+      "etiqueta": "Un ejemplo de mi código",
+      "pregunta": "Copia una línea de código que TÚ hayas escrito hoy que te haya costado entender al principio, y explica qué hace.",
+      "respuesta": ""
+    },
+    {
+      "etiqueta": "Preguntas pendientes",
+      "pregunta": "¿Qué duda te queda de la clase de hoy? (si no tienes ninguna, escribe 'ninguna')",
+      "respuesta": ""
+    }
+  ]
+}

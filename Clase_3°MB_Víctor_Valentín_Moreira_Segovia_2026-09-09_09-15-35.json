@@ -1,0 +1,108 @@
+{
+  "titulo": "U4 - Clase 2: Valores por Defecto, Múltiples Retornos y Listas",
+  "colegio": "Colegio Arriarán Barros",
+  "estudiante": "Víctor Valentín Moreira Segovia",
+  "curso": "3°MB",
+  "inicio": "2026-09-09T11:41:59.256Z",
+  "guardado": "2026-09-09T12:15:35.866Z",
+  "tiempoTranscurrido": "33 min 36 seg",
+  "ejercicios": [
+    {
+      "numero": 1,
+      "titulo": "Modelo: saludo con valor por defecto",
+      "estado": "ok",
+      "codigo": "def saludar(nombre=\"estudiante\"):\n    print(f\"¡Hola, {nombre}!\")\n\nsaludar()\nsaludar(\"Camila\")",
+      "salida": "¡Hola, estudiante!\n¡Hola, Camila!\n"
+    },
+    {
+      "numero": 2,
+      "titulo": "Práctica guiada: descuento con porcentaje por defecto",
+      "estado": "ok",
+      "codigo": "def calcular_precio(precio, descuento=10):\n    # Escribe aquí: usa return para devolver precio - (precio * descuento / 100)\n    return precio - (precio * descuento / 100)\n\nprint(calcular_precio(23000))       # usa el descuento por defecto (10%)\nprint(calcular_precio(23000, 45))   # usa 20%",
+      "salida": "20700.0\n12650.0\n"
+    },
+    {
+      "numero": 3,
+      "titulo": "Independiente: mensaje de curso con valor por defecto",
+      "estado": "ok",
+      "codigo": "# Escribe tu solución completa aquí\ndef m_c(nombre, curso):\n    print(f\"hola {nombre} de {curso}\")\n\nm_c(\"matias\", \"3°A\")\nm_c(\"maxi\", \"3°B\")\n",
+      "salida": "hola matias de 3°A\nhola maxi de 3°B\n"
+    },
+    {
+      "numero": 4,
+      "titulo": "Modelo: cociente y resto de una división",
+      "estado": "ok",
+      "codigo": "def dividir(a, b):\n    cociente = a // b\n    resto = a % b\n    return cociente, resto\n\nc, r = dividir(17, 5)\nprint(f\"Cociente: {c}, Resto: {r}\")",
+      "salida": "Cociente: 3, Resto: 2\n"
+    },
+    {
+      "numero": 5,
+      "titulo": "Práctica guiada: máximo y mínimo de dos números",
+      "estado": "ok",
+      "codigo": "def max_min(a, b):\n    if a > b:\n        mayor = a\n        menor = b\n    else:\n        mayor = b\n        menor = a\n    # Escribe aquí: usa return para devolver mayor y menor\n    return mayor, menor\n\n\nmayor, menor = max_min(1, 7)\nprint(f\"Mayor: {mayor}, Menor: {menor}\")",
+      "salida": "Mayor: 7, Menor: 1\n"
+    },
+    {
+      "numero": 6,
+      "titulo": "Independiente: área y perímetro de un rectángulo",
+      "estado": "ok",
+      "codigo": "# Escribe tu solución completa aquí\ndef d_t(base, altura):\n    area = base * altura\n    perimetro = 2 * (base + altura)\n    return area, perimetro\n\narea, perimetro = d_t(98, 87)\nprint(f\"Área: {area}, Perímetro: {perimetro}\")\n\n",
+      "salida": "Área: 8526, Perímetro: 370\n"
+    },
+    {
+      "numero": 7,
+      "titulo": "Modelo: promedio de una lista",
+      "estado": "ok",
+      "codigo": "def promedio_lista(numeros):\n    return sum(numeros) / len(numeros)\n\nnotas = [7.0, 6.9, 7.0, 7.0]\nresultado = promedio_lista(notas)\nprint(f\"El promedio es {resultado}\")",
+      "salida": "El promedio es 6.975\n"
+    },
+    {
+      "numero": 8,
+      "titulo": "Práctica guiada: contar mayores a un valor",
+      "estado": "ok",
+      "codigo": "def contar_mayores(lista, limite):\n    contador = 0\n    # Escribe aquí: recorre la lista y cuenta los que sean mayores a 'limite'\n    for e in lista:\n        if e > limite:\n           contador = contador + 1\n    return contador\n\nedades = [55, 22, 17, 30, 56, 5]\nresultado = contar_mayores(edades, 18)\nprint(f\"Hay {resultado} mayores de edad\")",
+      "salida": "Hay 4 mayores de edad\n"
+    },
+    {
+      "numero": 9,
+      "titulo": "Independiente: contar aprobados",
+      "estado": "ok",
+      "codigo": "# Escribe tu solución completa aquí\ndef c_a(notas):\n    contador = 0\n    for nota in notas:\n        if nota >= 4.0:\n            contador = contador + 1\n    return contador\n\nnotas_c = [4.6, 6.9, 6.8, 6.5, 5.8, 7.0]\nr = c_a(notas_c)\nprint(f\"Aprobados: {r}\")\n",
+      "salida": "Aprobados: 6\n"
+    },
+    {
+      "numero": 10,
+      "titulo": "Desafío: reporte completo del curso",
+      "estado": "ok",
+      "codigo": "def reporte_curso(notas, nota_minima=4.0):\n    # Escribe aquí: calcula promedio y cantidad de aprobados, y devuelve ambos con un return\n    promedio = sum(notas) / len(notas)\n    aprobados = 0\n    for nota in notas:\n        if nota >= nota_minima:\n           aprobados = aprobados + 1\n    return promedio, aprobados\n\nnotas_curso = []\nfor i in range(5):\n    nota = float(input(f\"Nota {i + 1}: \"))\n    notas_curso.append(nota)\n\npromedio, aprobados = reporte_curso(notas_curso)\nprint(f\"Promedio del curso: {promedio}\")\nprint(f\"Aprobados: {aprobados}\")",
+      "salida": "Promedio del curso: 6.24\nAprobados: 4\n"
+    }
+  ],
+  "bitacora": [
+    {
+      "etiqueta": "Valores por defecto",
+      "pregunta": "¿Para qué sirve poner un valor por defecto a un parámetro? Da un ejemplo de una situación donde sea útil.",
+      "respuesta": "porque se hace más fácil trabajar con el parámetro que con valores específicos, además para trabajar casos más generales"
+    },
+    {
+      "etiqueta": "Múltiples retornos",
+      "pregunta": "Explica con tus palabras cómo funciona 'return valor1, valor2' y cómo se reciben esos dos valores al llamar la función.",
+      "respuesta": "a los valores que se les designo en la función. Y funciona para trabajar los valores de forma independiente, o utilizarlos de manera distinta en una misma operación."
+    },
+    {
+      "etiqueta": "Etapa más difícil",
+      "pregunta": "De las 3 etapas (Modelo, Guiado, Independiente), ¿en cuál tuviste que pensar más? ¿Por qué crees que fue esa?",
+      "respuesta": "Independiente, me costó más el pensar en cómo poder plantear los problemas"
+    },
+    {
+      "etiqueta": "Un ejemplo de mi código",
+      "pregunta": "Copia una línea de código que TÚ hayas escrito hoy que te haya costado entender al principio, y explica qué hace.",
+      "respuesta": ""
+    },
+    {
+      "etiqueta": "Preguntas pendientes",
+      "pregunta": "¿Qué duda te queda de la clase de hoy? (si no tienes ninguna, escribe 'ninguna')",
+      "respuesta": "ninguna"
+    }
+  ]
+}
